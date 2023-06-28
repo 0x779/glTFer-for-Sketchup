@@ -38,7 +38,6 @@ module Gltfer
                 end
             end
 
-
             # Create a new component definition to hold the imported GLTF/GLB model
             definitions = model.definitions
             component_definition = definitions.add "gltf"
@@ -51,9 +50,8 @@ module Gltfer
                 # Create a new instance of the component definition
                 instance = component_definition.instances.add(Geom::Transformation.new)
 
-                # Add the instance to the active entities collection using the "add" method
+                # Add the instance to the active entities collection
                 model.active_entities.add(instance)
-
                 geometry = instance.definition.entities
 
                 calculate_vertex_normals(component_definition.entities)
@@ -111,21 +109,6 @@ module Gltfer
 
             smooth_normal
         end
-
-
-        def set_opacity(opactiy)
-            model = Sketchup.active_model
-
-            # Get all materials in the model
-            materials = model.materials
-
-            # Iterate through each material
-            materials.each do |material|
-                # Set opacity to 1 (fully opaque)
-                material.alpha = opactiy
-            end
-        end
-
 
     # Last instance of Import class.
     #

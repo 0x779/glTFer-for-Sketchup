@@ -13,5 +13,4 @@ module Gltfer
         }
         file_loaded(__FILE__)
     end
-    
 end

@@ -70,9 +70,9 @@ module Gltfer
             # Fix for alpha to transparency conversion
             model = Sketchup.active_model
             model.materials.each { |material|
-                material.alpha = 1.0 - material.alpha
+                #material.alpha = 1.0 - material.alpha  -  disabled for now as software packages have different ways in which they write the alpha/opacity data
+                material.alpha = 1.0
             }            
-          
 
             # Zoom extents to show the whole model
             view = model.active_view

@@ -6,5 +6,6 @@ GLTF/GLB importer for Sketchup
 
 ## Installation
 
-Place `KhronosGltf.dll` in SketchUp's `Importers` directory (eg: `C:\Program Files\SketchUp\SketchUp 2017\Importers`)
+Place `gltfImporter.dll` in SketchUp's `Importers` directory (eg: `C:\Program Files\SketchUp\SketchUp 2017\Importers`)
+
 Place `gltfer` and `gltfer.rb` in SketchUp's `Plugins` directory (eg: `C:\Users\<USERNAME>\AppData\Roaming\SketchUp\SketchUp 2017\SketchUp\Plugins`)
